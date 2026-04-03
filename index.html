@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" a href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="nav">
@@ -15,10 +15,12 @@
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-       <div class="nav__icon"><img src="https://cdn-icons-png.flaticon.com/128/15453/15453013.png"></div>
+       <div class="nav__icon" id="menuicon">
+        <img src="https://cdn-icons-png.flaticon.com/128/13705/13705349.png" onclick="toggleMenu()">
+       </div>
          </div>
           <div class="home">
-        <h1>Space & style</h1>
+        <h1>Space & Style</h1>
         <h3>Build your Dream With Us</h3>
         <div class="button">
         <button class="button__contact">Contact</button>
@@ -30,7 +32,7 @@
             <p>We Ensure Timeless Elegence and Natural Beauty to your Space. Choose Your Style With Us. </p>
         </div>
         <div class="content__booking">
-            <p>your home should tell the story who you are;  we help you curate that story with passion and purpose</p>
+            <p>your home should tell the story who of you are;  we help you curate that story with passion and purpose</p>
             <button class="button__contact">Contact</button>
         <button class="button__book">Book</button>
         </div>
@@ -58,15 +60,21 @@
     </div>
     <p class="features__card--text">3D VISUALIZATION</p>
   </div>
-   <div class="card-wrapper">
+  <div class="card-wrapper">
+    <div class="features__card">
+      <img src="https://images.jdmagicbox.com/quickquotes/images_main/granite-flooring-tile-2228180098-psk9sbm5.jpg">
+    </div>
+    <p class="features__card--text">FLOORING</p>
   </div>
+  
   </div>
 </div>
- <p class="section-title"><b>SERVICES</b></p>
-  <div class="card-wrapper">
+ <p class="section-title"><b>HIGHLIGHTS</b></p>
+   
  <div class="services">
   <div class="services__card">
       <img src="https://interiosplash.com/wp-content/uploads/2024/09/2_11zon.webp">
+      
     </div>
     <div class="services__card">
       <img src="https://5.imimg.com/data5/SELLER/Default/2025/8/539130868/CS/LR/NN/251432114/bedroom-interior-design-service.jpg">
@@ -75,7 +83,7 @@
       <img src="https://www.decorpot.com/images/2124404761elegant-kitchen-accent-tips-and-ideas-for-your-home.jpg">
     </div>
     </div>
-    </div>
+ 
     <p class="section-title"><b>GALLERY</b></p>
     <div class="gallery">
       <div class="gallery__image">
@@ -163,8 +171,19 @@
 
 </div>
     </div>
-  </div>
+  
 
-</div>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("items");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
+ 
 </body>
 </html>
